@@ -1,0 +1,44 @@
+﻿<DMSkin:DMSkinSimpleWindow
+    x:Class="WebAPP.MainWindow"
+    xmlns:DMSkin="clr-namespace:DMSkin.WPF;assembly=DMSkin.WPF"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="523.5" d:DesignHeight="388"
+    Title="MainWindow"
+    Width="472"
+    Height="372"
+    Background="Transparent"
+    BorderThickness="20"
+    DMWindowShadowColor="#FF999999"
+    DMWindowShadowSize="10"
+    Foreground="White"
+    ResizeMode="CanMinimize"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None">
+
+    <Border Background="#dedede" CornerRadius="5" BorderThickness="1">
+
+        <Grid Margin="0,0,0,0">
+            <Grid Background="Transparent">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" Name="DMTitle">
+                    <Button
+                        Width="195"
+                        Height="32"
+                        Background="#FF00B2DE"
+                        Content="登  录"
+                        Style="{DynamicResource ButtonStyle3}" Click="ButtonBase_OnClickBase_OnClick" Margin="120,253,116,-255" />
+                </Grid>
+            </Grid>
+            <ResizeGrip VerticalContentAlignment="Bottom" HorizontalContentAlignment="Right"
+                        HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+        </Grid>
+    </Border>
+
+</DMSkin:DMSkinSimpleWindow>
