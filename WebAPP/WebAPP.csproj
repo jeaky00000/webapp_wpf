@@ -35,8 +35,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DMSkin.WPF">
-      <HintPath>C:\Users\MF\Downloads\DMSkin.WPF.dll</HintPath>
+      <Reference Include="DMSkin.Core, Version=2.5.1.4, Culture=neutral, PublicKeyToken=null">
+          <HintPath>C:\Users\MF\Downloads\DMSkin-for-WPF-master\DMSkin-for-WPF-master\DMSkin.WPF\bin\Release\DMSkin.Core.dll</HintPath>
+      </Reference>
+      <Reference Include="DMSkin.WPF, Version=2.5.1.4, Culture=neutral, PublicKeyToken=null">
+          <HintPath>C:\Users\MF\Downloads\DMSkin-for-WPF-master\DMSkin-for-WPF-master\DMSkin.WPF\bin\Release\DMSkin.WPF.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -61,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+      <Compile Include="ViewModel\MainWindowViewModel.cs"/>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -73,12 +77,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Styles\DMSkin.xaml">
+      <Page Include="Styles\Colors.xaml"/>
+      <Page Include="Styles\DMSkin2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+      <Page Include="Styles\ListBoxStyle.xaml"/>
   </ItemGroup>
   <ItemGroup>
+      <Compile Include="Model\UserInfo.cs"/>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

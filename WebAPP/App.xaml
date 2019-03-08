@@ -5,8 +5,25 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
+            <FontFamily x:Key="MainFont">Microsoft YaHei</FontFamily>
+
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles/DMSkin.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;Component/Styles/DMSkin.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;Component/Styles/dmscrollviewer.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMIcon.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMButton.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMCheckBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;Component/Styles/Animation.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMTextBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMSlider.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMContextMenu.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMTabControl.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMRadioButton.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMTreeView.xaml" />
+
+                <ResourceDictionary Source="Styles/DMSkin2.xaml" />
+                <ResourceDictionary Source="Styles/Colors.xaml" />
+                <ResourceDictionary Source="Styles/ListBoxStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

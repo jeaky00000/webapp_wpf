@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\documents\vs\csharp\WebAPP\WebAPP\obj\Debug\
+D:\documents\vs\csharp\webapp_wpf\WebAPP\obj\Debug\
 WebAPP
 none
 false
 DEBUG;TRACE
-D:\documents\vs\csharp\WebAPP\WebAPP\App.xaml
-2-555350994
+D:\documents\vs\csharp\webapp_wpf\WebAPP\App.xaml
+4-845791587
 
-5-2017746502
-15-533148053
-MainWindow.xaml;Styles\DMSkin.xaml;
+71768089595
+16-407764734
+MainWindow.xaml;Styles\Colors.xaml;Styles\DMSkin2.xaml;Styles\ListBoxStyle.xaml;
 
 False
 
