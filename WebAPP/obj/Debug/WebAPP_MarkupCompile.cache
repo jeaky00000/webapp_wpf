@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\documents\vs\csharp\webapp_wpf\WebAPP\App.xaml
-4-845791587
+132116095240
 
-71768089595
+17530541596
 16-407764734
-MainWindow.xaml;Styles\Colors.xaml;Styles\DMSkin2.xaml;Styles\ListBoxStyle.xaml;
+MainWindow.xaml;Pages\Page1.xaml;Pages\Page2.xaml;Styles\Button.xaml;Styles\Color.xaml;Styles\Colors.xaml;Styles\DMSkin2.xaml;Styles\DMSlider.xaml;Styles\Expander.xaml;Styles\ListBoxStyle.xaml;Styles\Path.xaml;Styles\ProgressBar.xaml;Styles\RadioButton.xaml;
 
 False
 

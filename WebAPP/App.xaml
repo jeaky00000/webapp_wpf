@@ -1,13 +1,29 @@
-﻿<Application x:Class="WebAPP.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WebAPP"
-             StartupUri="MainWindow.xaml">
+﻿<Application
+    x:Class="WebAPP.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="clr-namespace:WebAPP.Converters"
+    xmlns:converters1="clr-namespace:DMSkin.Core.Converters;assembly=DMSkin.Core"
+
+    StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
-            <FontFamily x:Key="MainFont">Microsoft YaHei</FontFamily>
+            <!--  字体  -->
+            <FontFamily x:Key="FontNormal">微软雅黑,SimSun</FontFamily>
+            <!--<FontFamily x:Key="FontNormal">/DMSkin.CloudMusic;component/Font/#Roboto Light,SimSun</FontFamily>-->
+            <FontFamily x:Key="FontTitle">微软雅黑</FontFamily>
+
+            <SolidColorBrush x:Key="TransparentColor" Color="Transparent" />
+
+            <TextBlock x:Key="xxx" FontFamily="Microsoft YaHei" />
+            <!--  字体大小  -->
+
+            <!--  转换器  -->
+            <converters:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+
 
             <ResourceDictionary.MergedDictionaries>
+
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;Component/Styles/DMSkin.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;Component/Styles/dmscrollviewer.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMIcon.xaml" />
@@ -15,16 +31,25 @@
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMCheckBox.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;Component/Styles/Animation.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMTextBox.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMSlider.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMContextMenu.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMTabControl.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMRadioButton.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMTreeView.xaml" />
-
-                <ResourceDictionary Source="Styles/DMSkin2.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/dmresizegrip.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/DMSkin.WPF;component/Styles/DMDataGrid.xaml" />
                 <ResourceDictionary Source="Styles/Colors.xaml" />
+                <ResourceDictionary Source="Styles/DMSkin2.xaml" />
                 <ResourceDictionary Source="Styles/ListBoxStyle.xaml" />
+                <ResourceDictionary Source="Styles/Path.xaml" />
+                <ResourceDictionary Source="Styles/Color.xaml" />
+                <ResourceDictionary Source="Styles/Expander.xaml" />
+                <ResourceDictionary Source="Styles/RadioButton.xaml" />
+                <ResourceDictionary Source="Styles/DMSlider.xaml" />
+                <ResourceDictionary Source="Styles/ProgressBar.xaml" />
+
+
             </ResourceDictionary.MergedDictionaries>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

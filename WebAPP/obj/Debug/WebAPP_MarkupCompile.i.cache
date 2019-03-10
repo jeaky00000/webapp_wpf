@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\documents\vs\csharp\WebAPP\WebAPP\obj\Debug\
+D:\documents\vs\csharp\webapp_wpf\WebAPP\obj\Debug\
 WebAPP
 none
 false
 DEBUG;TRACE
-D:\documents\vs\csharp\WebAPP\WebAPP\App.xaml
-2-555350994
+D:\documents\vs\csharp\webapp_wpf\WebAPP\App.xaml
+11577692547
 
-6-851898879
-15-533148053
-MainWindow.xaml;Styles\DMSkin.xaml;
+111355264087
+16-407764734
+MainWindow.xaml;Styles\Button.xaml;Styles\Color.xaml;Styles\Colors.xaml;Styles\DMSkin2.xaml;Styles\DMSlider.xaml;Styles\Expander.xaml;Styles\ListBoxStyle.xaml;Styles\Path.xaml;Styles\ProgressBar.xaml;Styles\RadioButton.xaml;
 
 True
 

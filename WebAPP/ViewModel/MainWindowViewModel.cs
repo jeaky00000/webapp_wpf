@@ -1,30 +1,55 @@
-using System.Collections.Generic;
+﻿using System.Windows.Controls;
 using DMSkin.Core.MVVM;
+using WebAPP.API;
 using WebAPP.Model;
 
 namespace WebAPP.ViewModel
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        public MainWindowViewModel()
+        #region 页面切换
+
+        private Page currentPage = PageManager.page1;
+
+        /// <summary>
+        ///     当前页面
+        /// </summary>
+        public Page CurrentPage
         {
-            LoadUserInfoList();
+            get => currentPage;
+            set
+            {
+                currentPage = value;
+                OnPropertyChanged("CurrentPage");
+            }
         }
 
-        public List<UserInfo> UserInfoList { get; set; }
+        private LeftMenu selectMenu;
 
-        private void LoadUserInfoList()
+        /// <summary>
+        ///     选中的菜单
+        /// </summary>
+        public LeftMenu SelectMenu
         {
-            UserInfoList = new List<UserInfo>();
-            // Task.Factory.StartNew(() => { });
-            for (var i = 50 - 1; i >= 0; i--)
-                UserInfoList.Add(new UserInfo
+            get => selectMenu;
+            set
+            {
+                selectMenu = value;
+                switch (selectMenu)
                 {
-                    Index = i + 1,
-                    Info = $"user name {i}",
-                    Name = $"user name {i}",
-                    Title = i % 2 == 0 ? "Teacher" : "Student"
-                });
+                    case LeftMenu.page1:
+                        CurrentPage = PageManager.page1;
+                        break;
+                    //跳转到本地音乐
+                    case LeftMenu.page2:
+                        CurrentPage = PageManager.page2;
+                        break;
+                }
+
+                OnPropertyChanged("SelectMenu");
+            }
         }
+
+        #endregion
     }
 }
